@@ -1,9 +1,14 @@
 .milan {
     width: 1000px;
+    transition-duration: 1s;
 }
 body {
     background-color: aquamarine;
 }
 .mhm {
     text-align: center;
+}
+
+.milan:hover {
+    rotate: 360deg;
 }
