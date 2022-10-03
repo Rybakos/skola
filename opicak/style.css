@@ -1,6 +1,6 @@
 .milan {
     width: 1000px;
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
 body {
     background-color: aquamarine;
@@ -11,4 +11,10 @@ body {
 
 .milan:hover {
     rotate: 360deg;
+}
+.h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+p.milan {
+border-style: solid;
 }
