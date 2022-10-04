@@ -10,11 +10,78 @@
     <h1>Základy HTML5</h1>
     <h2>Publikování na Internetu</h2>
     <h3>Univerzita Pardubice - 2017</h3>
-    <hr>
+        <hr>
     <h4>Formátování, dělení, odstavce a citace</h4>
+        <br>
+        <p>Na prvních třech řádcích je patrná změna stylů, která je způsobena různými úrovněmi nadpisů. Nadpisy v HTML jsou tvořeny pomocí párových tagů v šesti úrovních &lt;h1&gt;	 (nejvýznamnější), &lt;h2&gt;	, ..., &lt;h6&nbsp; (nejméně významný). Na
+        jedné stránce by se neměl vyskytovat více, než jeden párový tag &lt;h1&gt;	. Tento úsek textu (odstavec) je vepsán do párového tagu &lt;p&gt;&lt;/p&gt;	. Přechod na nový řádek v odstavci se provede pomocí nepárové značky &lt;br/&gt;, nebo vytvořením
+        nového odstavce.</p>
+        <br>
+   
+        <p style="text-align:left" ;>Citace, prohlížeče automaticky odsazují z obou stran textu. Lze vyřešit v CSS </p>
+  
+         <br>
+    <pre><p>Občas je z nějakého důvodu v textu nutné zachovat více      mezer, nebo        tabulátor.      Podaří se to vepsáním textu do párového tagu &lt;pre&gt; &lt;/pre&gt;, který má vlastní předdefinovaný styl.
+        Text, který je napsán v tomto tagu, zachová přesnou strukturu toho, jak byl napsán.
+        Nic se neořezává, bíle znaky (enter, mezera, tabulátor) neztrácí význam a text se nepřizpůsobí oknu (není responsivní).</p></pre>
+        <br>
+        <p>Nakonec se může hodit párový tag &lt;div&gt; &lt;/div&gt;, který odděluje sekce dokumentu. Pokud v tagu &lt;div&gt;, &lt;pre&gt;, nebo jiných, potřebujeme oddělit vnořenou část, docílíme toho pomocí párového tagu &lt;span&gt; &lt;/span &gt;. Takto libovolně
+        odděl<span style="color:red ;">enou část lze různě stylovat pomocí kaskadových stylů (CSS)</span>.</p>
+        <hr>
+    <h4>Číslované a nečíslované seznamy</h4>
+    <h5>Nečíslované, odrážky</h5>
+    <ul>
+        <li>Jablka</li>
+        <li>Hruška</li>
+        <li>Švestky</li>
+        <li>Banány</li>
+    </ul>
     <br>
-    <p>Na prvních třech řádcích je patrná změna stylů, která je způsobena různými úrovněmi nadpisů. Nadpisy v HTML jsou tvořeny pomocí párových tagů v šesti úrovních &lt;h1&gt;	 (nejvýznamnější), &lt;h2&gt;	, ..., &lt;h6&nbsp; (nejméně významný). Na
-        jedné stránce by se neměl vyskytovat více, než jeden párový tag &lt;h1&gt;	. Tento úsek textu (odstavec) je vepsán do párového tagu &lt;p&gt;;;&lt;/p&gt;	. Přechod na nový řádek v odstavci se provede pomocí nepárové značky &lt;br/&nbsp;, nebo vytvořením
-        nového odstavce.&lt;/p&gt;	
-</body>
+    <h4>Číslované</h4>
+    <ol> <li>Jablka</li>
+        <li>Hrušky</li>
+        <li>Švestky</li></ol>
+    <br>
+    <h4>Číslované římsky</h4>
+    <ol type="I" >
+        <li>Jablka</li>
+        <li>Hrušky</li>
+        <li>Švestky</li>
+        <li>Banány</li>
+    </ol>
+    <br>
+    <h3>Typy seznamů lze kombinovat a zanořovat.</h3>
+    <ol type="I">
+        <li>Cíle předmětu</li>
+            <ul style="list-style-type:circle">
+                <li><p>Rozšířit a prohloubit teoretické znalosti studentů v oblasti WWW technologií.</p></li></ul>
+        <li>Požadavky na studenta</li>
+            <ul style="list-style-type:circle">
+                <li><p>Podmínkou k udělení zápočtu je úspěšné zpracování semestrální práce a splnění povinné docházky.</p></li></ul>
+        <li>Obsah</li>
+            <ol type="1">
+                <li>Jazyk HTML</li>
+                <ul style="list-style-type:square">
+                    <li>výhody použití</li>
+                    <li>pokročilé značky HTML</li>
+                    <li>seznamy</li>
+                    <li>obrázky</li>
+                </ul>
+                <li>Kaskádové styly</li>
+                <ul style="list-style-type:square">  
+                    <li>font</li>
+                    <li>barva</li>
+                    <li>velikost</li>
+                    <li>pozice</li>
+                </ul>   
+        <li>Hodnotící metody</li></ol>
+                <ul style="list-style-type:circle">
+                    <li>Písemná zkouška</li>  
+            </ol>
+<hr>
+<h3>Obrázky a odkazy</h3>
+<br>
+<p>Struktura nepárového tagu &lt;img&gt;: &lt;img src="cesta k obrazku" alt="alternativní text"/&gt;</p>
+<a href=""><img src="C:\Users\filpl\Desktop\programovani\skola\obrázky\800px-20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg" width="425" target="_blank" ></a>
+<body>        
 </html>
