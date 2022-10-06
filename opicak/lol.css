@@ -1,0 +1,36 @@
+body {
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    background-image: 
+   url("https://www.mistopisy.cz/modules/pruvodce/media/village/9523/gallery/3/3137.jpg");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  
+  .typewriter h1 {
+    color: black;
+    opacity: .9;
+    font-family: monospace;
+    font-size: 100px;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;-
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
