@@ -3,9 +3,8 @@ body {
     display: flex;
     justify-content: center;
     background-image: 
-   url("https://www.mistopisy.cz/modules/pruvodce/media/village/9523/gallery/3/3137.jpg");
+   url("https://upload.wikimedia.org/wikipedia/commons/2/24/Vinary%28okr%C3%9Ast%C3%ADnO%292011.jpg");
    height: 100%;
-   background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
   }
