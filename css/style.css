@@ -1,0 +1,10 @@
+p{
+    border: solid 2px black
+}
+body{
+    background-image: 
+    url("https://1gr.cz/fotky/bulvar/22/083/cl6/ABL95ab39_Snimekobrazovky2022_08_25v14.17.11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 50px solid lightblue;
+}
