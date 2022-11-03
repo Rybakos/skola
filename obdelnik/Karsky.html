@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .obdelnik h3{
+            margin:2px 0px;
+            color: red;
+        }
+        .obdelnik p{
+             margin-top: 5px ;
+             text-align: justify; 
+             margin-right: 25px;
+        }
+        .obdelnik img{
+            float:right;
+            
+        }
+        .obdelnik{
+            background-color: #edf5e1; 
+            width: 350px;
+            margin: auto; 
+            border:solid 2px pink ; 
+            padding: 10px;
+            box-sizing: border-box; 
+        }
+        #ja{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="obdelnik">
+        <img src="zavrit.png" alt="ikona">
+        <h3>Sample heading</h3>
+        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officia veritatis quo aperiam. Quibusdam non deserunt cupiditate quas qui id dolores commodi minus est ullam. Vero doloribus debitis vitae?</p>  
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dicta laboriosam repellendus fugiat quidem sed perferendis commodi? Voluptates recusandae optio dolorum aliquam perferendis quod excepturi fugiat totam nostrum! Molestiae, ea?
+    </div>
+    <h3 style="color:pink ;">AHOJ</h3>
+    <hr>
+    <div class="obdelnik">
+        <img src="zavrit.png" alt="ikona">
+        <h3>Sample heading</h3>
+        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officia veritatis quo aperiam. Quibusdam non deserunt cupiditate quas qui id dolores commodi minus est ullam. Vero doloribus debitis vitae?</p>  
+    </div>
+
+    <div class="obdelnik">
+        <img src="zavrit.png" alt="ikona">
+        <h3>Sample heading</h3>
+        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officia veritatis quo aperiam. Quibusdam non deserunt cupiditate quas qui id dolores commodi minus est ullam. Vero doloribus debitis vitae?</p>  
+    </div>
+
+    <div class="obdelnik" id="ja">
+        <img src="zavrit.png" alt="ikona" onclick="document.getElementById('ja').style.display='none';">
+        <h3>Sample heading</h3>
+        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officia veritatis quo aperiam. Quibusdam non deserunt cupiditate quas qui id dolores commodi minus est ullam. Vero doloribus debitis vitae?</p>  
+    </div>
+
+</body>
+</html>
