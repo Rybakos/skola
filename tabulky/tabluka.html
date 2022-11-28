@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        if 1==1:
+        { window.location.reload(); }
+    </script>
+    <style>
+        table{
+            border: solid black 2px;
+            min-width: 600px;
+            min-height: 400px;
+            margin: auto;
+
+        }
+        td{
+            border: solid 1px rgb(28, 224, 175);
+            padding: 5px 10px;
+            min-width: 15%;
+            text-align: center;
+            vertical-align: bottom;
+        }
+        th{
+            border: solid 1px rgb(154, 2, 241) ;
+        }
+        table, td{
+            border-collapse: collapse;
+        }
+        /*.zdurazneni{
+            font-size: 120%;
+            font-weight: bold;
+            background-color: rgb(255, 81, 0);
+            vertical-align: middle !important;
+            text-align: center;
+        }*/
+        body{
+            background-color: rgb(168, 121, 115);
+        }
+        #prvni caption{
+            font-size: 180%;
+            font-weight: bold;
+            text-align: left;
+        }
+        td:nth-child(2n+1){
+            background-color: #ccc;
+        }
+        td:nth-child(2n){
+            background-color: #eee;
+        }
+        /*td:nth-child(3n+3){
+            font-weight: bold;
+            font-size: 120%;
+            color: blanchedalmond;
+        }*/
+        td:hover{
+            background-color: pink;
+            color: tomato;
+            font-weight: bold;
+        }
+
+    </style>    
+</head>
+<body>
+    <table id="prvni">
+        <caption>Tabulka č. 1:....</caption>
+        <tr class="zdurazneni">
+            <th colspan="4">1 1</th>
+        </tr>
+        <tr>
+            <td  class="zdurazneni">2 1</td>
+            <td>2 2</td>
+            <td>2 3<br>2 3<br>2 3<br>2 3 </td>
+            <td rowspan="2">2 4</td>
+        </tr>
+        <tr>
+            <td class="zdurazneni">3 1</td>
+            <td>3 2</td>
+            <td>3 3</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+</body>
+</html>
