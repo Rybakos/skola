@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #skryto{
+            visibility: collapse; 
+        }
+        td{
+            width:25%;
+        } 
+        /*Pokud tabulka nedělá co má tak tohle jsou 2 možnosti jak to opravit:)*/
+    </style>
+    <style>
+        td{
+            border: black solid 2px;
+        }
+        table{
+            border: black solid 2px;
+        }
+        td,table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2"> 12 - 1</td>
+            <td colspan="2"> 1- 23</td>
+            <td>1 - 4</td>
+        </tr>
+        <tr>
+            <td>2 - 2</td>
+            <td colspan="2"> 2 - 3,4</td>
+        </tr>
+        <tr id="skryto">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr> 
+    </table>
+</body>
+</html>
