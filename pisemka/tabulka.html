@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: 'Lucida Sans Unicode';
         }
         .tb1{
             margin: auto;
@@ -18,8 +18,11 @@
             min-width: 300px;
             
         }
-        .tb1 tr{
-            border: 1px solid rgb(131, 125, 125);
+        .tb1 tr:nth-child(2n){
+            border-bottom: 1px solid rgb(131, 125, 125);
+        }
+        table tr td:nth-child(3) {
+            font-weight: bold;
         }
         table{
             border: 1px solid gray;
@@ -44,11 +47,11 @@
             padding-bottom: 5px;
         }
         .tb1 td{
-            background-color: gray;
+            background-color: rgb(228, 228, 228);
             
         }
         .tb2 td{
-            background-color: gray;
+            background-color: rgb(230, 230, 230);
         }
         #pravo{
             text-align: right;
