@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozadi</title>
+    <style>
+
+        #nad{
+            text-align: center;
+            color: #685044;
+        }
+        body{
+            background-color: #F9DEC9;
+        }
+        li{
+            float: left;
+        }
+         ul{
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            background-color: #E9AFA3;
+            border-radius: 30px;
+
+        }
+        li a{
+            
+            display: block;
+            padding: 8px;
+            color: #3A405A;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: large;
+        }
+        li a:hover{
+            background-color: rgb(2, 22, 2);
+        }
+        #p1 {
+            text-align: center;
+            font-size: large;
+            color: #3A405A;
+            font-family: 'Lucida Sans Unicode';
+
+        }
+        p{
+            margin-top: -10px;
+            margin-left: 30px;
+            font-family: 'Lucida Sans Unicode';
+            font-size: 13px;
+
+        }
+        img{
+            margin-left: 50px;
+            padding-bottom: 5px;
+            margin-top: -10px;
+        }
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            
+        }
+
+        h3{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px solid #AEC5EB;
+            border-radius: 30px;
+            background-color: #AEC5EB;
+            color: 685044;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="nad">Pozadí</h1>
+    <ul class="lol">
+        <li><a href="../Karsky-Pozadi,barvy/Karsky.html">Home</a></li>
+        <li><a href="../Karsky-Pozadi,barvy/barvy.html">Barvy</a></li>
+    </ul>
+    <br>
+    <br>
+    <p> CSS vlastnosti pozadí používáme k přidání efektu pozadí pro náš webovou stránku nebo element</p>
+    <h3>CSS Background Color</h3>
+        <p> Tato vlastnost určuje barvu, prvku pozadí</p>
+        <p>Zde vidíte příklad jak se dá jednoduše nastavit pozadí pro celé &ltbody&gt</p>
+        <img src="../Karsky-Pozadi,barvy/obrazky/background color.PNG">
+        <p>Pokud toto chceme nastavit pro jiné elementy, stačí přepsat body třeba na &ltdiv&gt atd</p>
+            <br>
+    <h3>CSS Background image</h3>
+        <p>Tuto vlastnu můžeme využít pokud chceme místo barvy, nastavit na pozadí obrázek dle našeho výběru.</p>
+        <img src="../Karsky-Pozadi,barvy/obrazky/background image.PNG">
+        <p>Takto jednoduše se dá pro celé body nastavit pozadí za pomoci obrázku.Obrázek má v základu nastaveno že se opakuje a tím pádem nám pokryje celou stránku ale o tom si řekneme více v další kapitole.</p>
+        <br>    
+    <h3>CSS Background repeat</h3>
+        <p>V základu, jak už bylo psáno se obrázel opakuje a to jak vertikálně tak i horizontálně.</p>
+        <p>Pokud nechceme aby se náš obrázek opakoval, můžeme použít jednoduchý command:</p>
+        <img src="../Karsky-Pozadi,barvy/obrazky/background norepeat.PNG">
+        <p>A díký vlastnosti background-position můžeme obrázku určit kde přesněji chceme aby byl(např. right top)</p>
+        <br>    
+    <h3>CSS Background Attachment</h3>
+        <p>Tato vlastno nám určuje zda se obrázek bude posouvat s celou stránkou nebo bude zafixovaný na jednom místě.</p>
+        <p>Pokud chceme aby náš obrázek zůstal zafixovaný na jedné pozici použijeme tento příkaz:</p>
+        <img src="../Karsky-Pozadi,barvy/obrazky/background norepeat.PNG">
+        <p>A pokud chceme aby  zůstal na jedné pozici a scrolloval se s zbytkem stránky přepíšeme no-repeat na scroll</p>
+</body>
+</html>
