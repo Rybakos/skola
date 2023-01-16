@@ -24,21 +24,42 @@
             display: flex;
             min-height: 300px;
             flex-wrap: wrap;
+
         }
-        .green{
+        #green{
             background-color: green;
             flex: 1;
+            min-width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            align-content: center;
+
         }
         .red{
             background-color: red;
             flex: 1;
+            min-width: 250px;
         }
         .yellow{
             background-color: yellow;
             flex: 1;
+            min-width: 250px;
         }
         .white{
             min-height: 75px;
+
+        }
+        .button{
+            width: 80%;
+            height: 30px;
+            border: 2px black solid;
+            text-align: center;
+            background-color: aqua;
+            
+
 
         }
     </style>
@@ -47,9 +68,12 @@
     <div id="main">
         <div class="blue"></div>
         <div class="container">
-            <div class="green">
-                <p>f</p>
-                <p>f</p>
+            <div id="green">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4</div>
+                <div class="button">5</div>   
             </div>
             <div class="red">
                 <p>f</p>
