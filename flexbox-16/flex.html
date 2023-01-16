@@ -6,10 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool</title>
     <style>
+         #kontejner1{
+            border: 2px solid black;
+            min-width: 500px;
+            min-height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .obdelnik{
+        padding: 1px;
+        }
+            
+        
+        #modra {
+            background-color: blue;
+            width: 100%;
+            height: 50px;
+        }
+        #zelena{
+            background-color: green;
+            flex: 1;
+            height: 250px;
+        }
+        #cervena{
+            background-color: red;
+            flex: 1;
+            height: 250px;
+            
+        }
+        #zluta{
+            background-color: yellow;
+            height: 250px;
+            flex: 1;
+            
+        }
+        #white{
+            width: 100%;
+            height: 80px;
+        }
 
     </style>
 </head>
 <body>
-    
+    <div id="kontejner1">
+        <div class="obdelnik" id="modra"></div>
+        <div class="obdelnik" id="zelena"><p>ff</p> <p>ff</p></div>
+        <div class="obdelnik" id="cervena"><p>ff</p> <p>ff</p><p>ff</p> <p>ff</p><p>ff</p> <p>ff</p><p>ff</p> </div>
+        <div class="obdelnik" id="zluta"><p>ff</p><p>ff</p><p>ff</p><p>ff</p>
+        </div>
+        <div class="obdelnik" id="white">
+            <p>prvni</p>
+            <p>druhý</p>
+        </div>
+    </div>
 </body>
 </html>
