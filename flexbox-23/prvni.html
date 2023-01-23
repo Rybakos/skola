@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #uppermain{
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 5px;
+            
+            
+        }
+        #main{
+            margin: auto;
+            border: solid 2px black;
+            max-width: 800px;
+            min-height: 400px;
+            display: flex;
+            gap: 1%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        .obrazek{
+            background-image: url("../flexbox-23/dancing-godzilla.gif");
+            background-size: cover;
+            flex: 1;
+            min-width: 250px;
+            min-height: 250px;
+            padding: 10px;
+        }
+        .text{
+            flex: 1;
+            min-width: 250px;
+            
+            display: flex;
+            flex-direction: column;
+        }
+        .nadpis{
+            background-color: aqua;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .obsah{
+            background-color: red;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+<div id="uppermain">
+    <div id="main">
+        <div class="obrazek">
+        </div>
+        
+        <div class="text">
+            <div class="nadpis">
+                <h1>Lorem</h1>
+            </div>
+            <div class="obsah">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, libero commodi. Mollitia praesentium rem, libero quos eaque vel magnam eius ducimus quibusdam. Molestias consequuntur tenetur expedita aut, officia explicabo optio.</p>
+            </div>
+        </div>
+    </div>
+    <div id="uppermain">
+        <div id="main">
+            <div class="obrazek">
+            </div>
+            
+            <div class="text">
+                <div class="nadpis">
+                    <h1>Lorem</h1>
+                </div>
+                <div class="obsah">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, libero commodi. Mollitia praesentium rem, libero quos eaque vel magnam eius ducimus quibusdam. Molestias consequuntur tenetur expedita aut, officia explicabo optio.</p>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>

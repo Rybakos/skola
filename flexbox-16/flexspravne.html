@@ -48,13 +48,17 @@
             align-items: center;
             justify-content: center;
         }
-        .yellow{
+        #yellow{
             background-color: yellow;
-            flex: 1;
+
             min-width: 250px;
             display: flex;
+            flex: 1;
             flex: wrap;
             flex-direction: row;
+            flex-wrap: wrap;
+
+            
         }
         .white{
             min-height: 75px;
@@ -70,27 +74,11 @@
 
 
         }
-        .img{
+        img{
             min-height: 150px;
             max-height: 150px;
             min-width: 150px;
-            max-height: 150px;
-        }
-        .img21{
-            width: 50px;
-            height: 50px;
-        }
-        .img22{
-            width: 50px;
-            height: 50px;
-        }
-        .img23{
-            width: 50px;
-            height: 50px;
-        }
-        .img24{
-            width: 50px;
-            height: 50px;
+            max-height: 150px;     
         }
     </style>
 </head>
@@ -108,11 +96,11 @@
             <div class="red">
                <img src="../flexbox-16/500x500.jpg" class="img">
             </div>
-            <div class="yellow">
-                <img src="../flexbox-16/500x500.jpg" class="img21">
-                <img src="../flexbox-16/500x500.jpg" class="img22">
-                <img src="../flexbox-16/500x500.jpg" class="img23">
-                <img src="../flexbox-16/500x500.jpg" class="img24">
+            <div id="yellow">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
 
             </div>
         </div>
