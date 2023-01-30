@@ -34,6 +34,7 @@
             font-family:Georgia;
             padding-bottom: 5px;
         }
+
     </style>
 </head>
 <body>
@@ -51,7 +52,15 @@
         <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-09.png" data-lightbox="image-1" data-title="black face"> <img src="./fotky/nahled-09.png"> </a></div>
         <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-10.png" data-lightbox="image-1" data-title="snoop"> <img src="./fotky/nahled-10.png"></a> </div>
     </div>
-    <script src="./dist/js/lightbox.min.js"></script>
-    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+    
+<script src="./dist/js/lightbox.min.js"></script>
+<script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+<script>
+    lightbox.option({
+      'albumLabel': "Fotkos %1 aus %2",
+      'wrapAround': true
+    })
+</script>
+
 </body>
 </html>
