@@ -14,11 +14,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/3ffdff7d67.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
+        
 
     <style>
+        body {
+            background-color: white;
+            color: black;
+}
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+}
+    
+        @font-face{
+            font-family: Pomoc;
+            src: url(fonts/BebasNeue-Regular.ttf);
+        }
+        @font-face{
+            font-family: fortnite;
+            src: url(/MUJTOTALNIKONEC/fonts/Burbank\ Big\ Condensed\ Font.otf)
+        }
+
+        @font-face{
+            font-family: lolol;
+            src: url(/MUJTOTALNIKONEC/fonts/PressStart2P-Regular.ttf);
+        }
+
         #levo{
             text-align: left;
-            font-family: 'Oswald', sans-serif;
+            font-family: Pomoc;
             font-size: 18px;
             
             
@@ -52,6 +83,7 @@
             display: flex;
             text-decoration: none;
         }
+        
         .tlacitko3{
             border: black solid 2px;
             background-color: white;
@@ -69,14 +101,49 @@
         .fa-apple{
             color: rgb(102,102,102);
         }
+        .pokus{
+            font-family: fortnite;
+            font-size: 24px;    
+        }
+        .kul{
+            font-family: lolol;
+        }
+        
+
+.rainbow {
+    text-align: center;
+     font-size: 48px;
+    font-family: fortnite ;
+     letter-spacing: 5px;
+     animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+     from {
+      color: #6666ff;
+  }
+     10% {
+     color: #0099ff;
+  }
+    50% {
+     color: #00ff00;
+  }
+     75% {
+     color: #ff3399;
+  }
+    100% {
+       color: #6666ff;
+  }
+}
     </style>
 </head>
 <body>
+    <button onclick="myFunction()">Toggle dark mode</button>
     <p id="levo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At veritatis sapiente laboriosam, aspernatur necessitatibus quam odit sit non doloribus. Consectetur soluta illum facilis fuga quae. Minus error enim ex explicabo?</p>
     <p id="pravo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quam veniam magni soluta modi eum voluptatibus unde alias quisquam repellat, qui maxime, sit ea mollitia dignissimos laboriosam aliquam hic libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, error soluta laudantium dolores iste, nostrum ad cumque eum voluptate reprehenderit quos excepturi repellendus quod dolore ipsum odit nemo vitae in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis nesciunt blanditiis, neque officia illo expedita pariatur necessitatibus fugiat tempore ex repellat exercitationem culpa sed explicabo harum iste dolor suscipit.</p>
     <p id="stred">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus optio, voluptatum id recusandae facilis. Illum velit magni aut culpa exercitationem, doloribus perspiciatis dolorum, eos harum soluta ipsum? Doloribus, qui.</p>
-    
-            
+    <p class="pokus">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sint libero neque doloribus cum eius nihil deserunt nostrum expedita dicta deleniti ipsa labore dolorum, modi reprehenderit maiores consequatur inventore ratione.</p>
+     <p class="kul">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nulla, facilis, repudiandae mollitia quasi, possimus dicta laboriosam eius excepturi obcaecati at recusandae? Odit provident at adipisci ea quasi quam itaque.</p>       
     <a href=""  class="tlacitko">
         <div class="fa-3x">
         <i class="fa-brands fa-discord fa-flip"></i>
@@ -97,6 +164,11 @@
         </div>
         Treti
     </a>
+    <div id="shadowBox">
+
+        <h3 class="rainbow">COMING SOON</h3>
+      
+      </div>
 
       
       
