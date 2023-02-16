@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Základy CSS</title>
+    <style>
+        body{
+            background-color: rgb(63, 62, 62);
+            margin: 0;
+        }
+        #nad{
+            width: 100%;
+            height: 15%;
+            color: dodgerblue;    
+        }
+        #nad h1{
+            margin-left: 400px;
+        }
+        #nad .styly{
+            margin-top: -25px;
+        }
+
+        #format{
+            display: flex;
+            width: 100%;
+            height: 25%;;
+            background-color: turquoise;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+        #format .prvni{
+            color: aliceblue;
+            margin: 0;
+        }
+        #format h3{
+            color: aliceblue;
+        }
+        #format .druhy{
+            color: aliceblue;
+            margin: 0;
+        }
+        #format .prostredek{
+        margin: 0;
+        }
+        #format img{
+            width: 125px;
+            padding: 10px;
+        }
+        .forman{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #uvod{
+            margin: auto;
+            width: 960px;
+            height: 550px;
+            background-color: white;
+            padding: 20px;
+        }
+        #uvod h2 {
+            color: darkblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+        }
+        #uvod h3{
+            color: dodgerblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+        }
+        #uvod #telo{
+            display: flex;
+
+
+        }
+        .left{
+            flex: 1;
+            padding: 5px;
+        }
+        .right{
+            flex: 1;
+            padding: 5px;
+        }
+        .center{   
+            flex: 1;
+            padding: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="nad">
+        <h1>Kaskádové</h1>
+        <h1 class="styly">STYLY</h1>
+    </div>
+    
+
+    <div id="format">
+        <div class="forman">
+            <h2 class="prvni">FORMÁTOVÁNÍ</h2>
+            <h3 class=" prostredek">nejen</h2>
+            <h2 class="druhy">HTML dokumentů</h2>
+        </div>
+        <div>
+            <img src="CSS3_logo.svg.png">
+        </div>
+    </div>
+    
+
+    <div id="uvod">
+        <h2>Úvod</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil corporis illo tempore labore neque inventore perspiciatis. Autem commodi distinctio sint. Dolorum quaerat debitis ullam rerum provident reprehenderit et voluptatum minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dignissimos iure esse, consequatur minima laboriosam reiciendis fugiat repudiandae nemo nostrum natus tempore, cupiditate nobis! Aliquam cum commodi dicta corporis voluptate.</p>
+        <h2>Možnosti propojení s HTML dokumenty</h2>
+        <div id="telo">
+            <div class="left">
+                <h3>Vnitřní styly</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta neque, eum consectetur eligendi eius id? Eum, rem sed nulla ut deleniti veniam repudiandae molestias iusto nemo? Incidunt at eaque vero?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis placeat dolores fugiat? Aperiam sunt accusantium aliquam, accusamus officia eligendi facere por asperiores, explicabo aut laborum possimus a ratione doloribus et?</p>
+            </div>
+            <div class="center">
+                <h3>Externí styly</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda culpa temporibus blanditiis, illum, quod earum quo possimus, at tempore ducimus pariatur ullam eum? Eligendi accusamus nemo odio iusto magnam ipsam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quam quasi quisquam ducimus, fuga molestias consectetur ea placeat numquam soluta dolor, perspiciatis, asperiores cum sit dolores eos. Omnis, eos accusamus.</p>
+            </div>
+            <div class="right">
+                <h3>Vložené styly</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt harum ullam, est iste molestias incidunt fugit provident illum libero dolor, facilis fugiat quo odit earum deserunt reprehenderit! Pariatur, voluptas minus.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

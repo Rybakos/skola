@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Marck+Script">  
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: red;
+        }
+        * {
+            font-family: "Marck Script";
+            color: blue;
+            font-size: 20vh;
+            font-weight: 300;
+        }
+    </style>
+    <script>
+        document.addEventListener('mousemove', (event) => {
+            mX = event.clientX;
+            mY = event.clientY;
+            cX = screen.width;
+            cY = screen.height;
+            dx = cX-mX;
+            dy = mY-cY;
+            angle = Math.atan(dy/dx);
+            document.querySelector('body').style.cssText = "backdrop-filter:hue-rotate("+angle+"turn);filter:hue-rotate("+angle+"turn);";
+        });
+    </script>
+</head>
+<body>
+    <h1>:)</h1>
+</body>
+</html>

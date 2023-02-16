@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>avoid=vyhnout se</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #main{
+            border: 2px solid black;
+            max-width: 1000px;
+            margin: auto;
+            min-height: 150px;
+        }
+        .blue{
+            background-color: blue;
+            min-height: 50px;
+            margin-bottom: 5px;
+        }
+        .container{
+            display: flex;
+            min-height: 300px;
+            flex-wrap: wrap;
+
+        }
+        #green{
+            background-color: green;
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            align-content: center;
+
+        }
+        .red{
+            background-color: red;
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            flex: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #yellow{
+            background-color: yellow;
+
+            min-width: 250px;
+            display: flex;
+            flex: 1;
+            flex: wrap;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            
+        }
+        .white{
+            min-height: 75px;
+
+        }
+        .button{
+            width: 80%;
+            height: 30px;
+            border: 2px black solid;
+            text-align: center;
+            background-color: aqua;
+            
+
+
+        }
+        img{
+            min-height: 150px;
+            max-height: 150px;
+            min-width: 150px;
+            max-height: 150px;     
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="blue"></div>
+        <div class="container">
+            <div id="green">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4</div>
+                <div class="button">5</div>   
+            </div>
+            <div class="red">
+               <img src="../flexbox-16/500x500.jpg" class="img">
+            </div>
+            <div id="yellow">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
+                <img src="../flexbox-16/500x500.jpg" class="img2">
+
+            </div>
+        </div>
+        <div class="white">
+            <p>první</p>
+            <p>druhý</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>České Legendy</title>
+    <link href="./dist/css/lightbox.min.css" rel="stylesheet" />
+  
+    <style>
+        body{
+            background-color: gray;
+        }
+        #kontejner{
+            display: flex;
+            margin: auto;
+            border: 2px black solid;
+            max-width: 2000px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        img{
+            min-width: 100px;
+            max-width: 200px;
+            height: 80%;
+            display: block;
+            margin: 5px;
+            
+        }
+        h1{
+            margin: auto;
+            text-align: center;
+            font-family:Georgia;
+            padding-bottom: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <img src="../fotogalerie/fotky/MicrosoftTeams-image kopie.png">
+    <h1>FOTOGALERIE ČESKÝCH LEGEND</h1>
+    <div id="kontejner">
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-01.jpg" data-lightbox="image-1" data-title="Frí skůtr"> <img src="./fotky/nahled-01.jpg"></a> </div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-02.jpg" data-lightbox="image-1" data-title="Frí skůtr2"> <img src="./fotky/nahled-02.jpg"></a> </div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-03.jpg" data-lightbox="image-1" data-title="Low cost paní"> <img src="./fotky/nahled-03.jpg"></a> </div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-04.jpg" data-lightbox="image-1" data-title="Komorník"> <img src="./fotky/nahled-04.jpg"></a> </div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-05.png" data-lightbox="image-1" data-title="Španělská výměna manželek"> <img src="./fotky/nahled-05.png"> </a> </div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-06.jpg" data-lightbox="image-1" data-title="Nové zuby"> <img src="./fotky/nahled-06.jpg"> </a> </div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-07.jpg" data-lightbox="image-1" data-title="Jirka Král"> <img src="./fotky/nahled-07.jpg"> </a></div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-08.jpg" data-lightbox="image-1" data-title="dr skunk"> <img src="./fotky/nahled-08.jpg"> </a></div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-09.png" data-lightbox="image-1" data-title="black face"> <img src="./fotky/nahled-09.png"> </a></div>
+        <div class="brikule"> <a href="../fotogalerie/fotky/obrazek-10.png" data-lightbox="image-1" data-title="snoop"> <img src="./fotky/nahled-10.png"></a> </div>
+    </div>
+    
+<script src="./dist/js/lightbox.min.js"></script>
+<script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+<script>
+    lightbox.option({
+      'albumLabel': "Fotkos %1 aus %2",
+      'wrapAround': true
+    })
+</script>
+
+</body>
+</html>
