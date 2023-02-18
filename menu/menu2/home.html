@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      document.getElementById("pogo").innerHTML = "AHOJ AHOJ AHOJ";
+    </script>
     <style>
-        body{
-            background-color: #1A5653;
-        }
-        li{
-            float: left;
-        }
-        li a{
-            display: block;
-            padding: 14px 16px;
-            text-decoration: none;
-            color: white;
-        }
-        ul{
-            list-style-type: none;
-            margin: 0;
-            overflow: hidden;
-            background-color: #08313A;
-            padding: 0;
-            border-radius: 30px;
-             }
-        li:nth-child(1){
-            background-color: #5CD85A;
-        }
-        li a:hover{
-            background-color: #107869;
-        }
-        #cool:hover{
-            background-color: #2b662a;
-        }
-        
-        
+      body {
+        background-color: #1a5653;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #08313a;
+        padding: 0;
+        border-radius: 30px;
+      }
+      li:nth-child(1) {
+        background-color: #5cd85a;
+      }
+      li a:hover {
+        background-color: #107869;
+      }
+      #cool:hover {
+        background-color: #2b662a;
+      }
+      #brikule {
+        display: grid;
+        place-items: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <ul>
-        <li><a href="../menu2/home.html" id="cool">Home</a></li>
-        <li><a href="../menu2/contact.html">Contact</a></li>
-        <li><a href="../menu2/news.html">News</a></li>
-        <li><a href="../menu2/about.html">About</a></li>
-        <p>lol</p>
+      <li><a href="../menu2/home.html" id="cool">Home</a></li>
+      <li><a href="../menu2/contact.html">Contact</a></li>
+      <li><a href="../menu2/news.html">News</a></li>
+      <li><a href="../menu2/about.html">About</a></li>
     </ul>
-</body>
+    <p id="pogo"></p>
+    <script>
+      document.getElementById("pogo").innerHTML = "AHOJ AHOJ AHOJ";
+    </script>
+    <p id="pokus">ahoj</p>
+    <p id="chom">Kajte meres.Gadžo more čaje dyk sokeres</p>
+    <div id="brikule">
+      <button
+        type="button"
+        onclick="document.getElementById('pokus').innerHTML = 'Ahoooj'"
+      >
+        Klikni!
+      </button>
+      <button
+        type="button"
+        onclick="document.getElementById('chom').style.display='none'"
+      >
+        Smaž nářečí Chomutova
+      </button>
+      <button
+        type="button"
+        onclick="document.getElementById('chom').style.display = 'block'"
+      >
+        Zobraz nářečí Chomutova
+      </button>
+    </div>
+  </body>
 </html>
