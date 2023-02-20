@@ -1,0 +1,43 @@
+#main {
+  height: 900px;
+  max-width: 1440px;
+  border: black solid 5px;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.karta {
+  height: 45%;
+  max-width: 216px;
+  min-width: 170px;
+  border: 3px solid black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.hlava {
+  height: 15%;
+  width: 100%;
+  background-image: url(./obrazky/stažený\ soubor.jfif);
+}
+.text {
+  height: 77%;
+  width: 100%;
+}
+.text h2 {
+  margin: 2px;
+}
+.text p {
+  margin: 4px;
+}
+.spodek {
+  height: 8%;
+  width: 100%;
+  background-color: gray;
+}
+.spodek p {
+  margin: 5px;
+}
