@@ -1,0 +1,10 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+#menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
