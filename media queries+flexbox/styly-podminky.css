@@ -1,0 +1,22 @@
+@media (min-width: 800px) {
+  #main {
+    flex-direction: row;
+    text-align: left;
+    font-size: 16px;
+  }
+  #main2 {
+    flex-direction: row;
+    text-align: left;
+    font-size: 16px;
+  }
+  div.ikony {
+    margin-left: auto;
+  }
+}
+@media (min-width: 800px) {
+  #main,
+  #main2 {
+    max-width: 800px;
+    margin: auto;
+  }
+}

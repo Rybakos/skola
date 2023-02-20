@@ -1,0 +1,42 @@
+body {
+  background-color: gray;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 30px;
+}
+#main div {
+  background-color: aqua;
+  flex: 1;
+  padding: 20px;
+}
+#main a {
+  text-decoration: none;
+}
+#main2 {
+  display: none;
+  flex-direction: column;
+  background-color: aquamarine;
+  margin-top: 20px;
+  font-size: 18px;
+}
+#main2 div {
+  background-color: teal;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px black solid;
+  text-align: center;
+}
+#main2 a {
+  text-decoration: none;
+  color: violet;
+}
+.uvod2 {
+  padding-left: 50px;
+}
+div.ikony {
+  margin-left: 0;
+}
