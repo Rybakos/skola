@@ -1,0 +1,97 @@
+body {
+  background-color: gray;
+}
+#main {
+  height: 1080px;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px black;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  background-color: rgb(42, 42, 42);
+  width: 40%;
+  height: 40%;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+.trojice {
+  display: flex;
+  height: 40%;
+  width: 50%;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.vlevo {
+  flex: 1;
+  padding: 10px;
+}
+
+.vpravo {
+  flex: 1;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+.a {
+  background-color: rgb(192, 219, 226);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b {
+  background-color: rgb(205, 241, 195);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 860px) {
+  .center {
+    font-size: 20px;
+  }
+  .trojice {
+    flex-direction: column;
+  }
+  .vpravo {
+    flex-direction: row;
+  }
+  .vlevo {
+    font-size: 8px;
+  }
+}
+@media (max-width: 1280px) {
+  .vlevo {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .center {
+    height: 10%;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vlevo {
+    font-size: 5px;
+  }
+}
+@media (max-width: 350px) {
+  .vlevo {
+    font-size: 8px;
+  }
+  .center {
+    align-items: center;
+    justify-content: center;
+  }
+}
