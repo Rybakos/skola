@@ -1,0 +1,66 @@
+#mainobdelnik {
+  min-height: 300px;
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nahoreobdelnik {
+  width: 100%;
+  min-height: 100px;
+  background-color: red;
+}
+@media (max-width: 300px) {
+  #mainobdelnik {
+    background-color: yellow;
+  }
+  .nahoreobdelnik {
+    display: none;
+  }
+}
+@media (max-width: 200px) {
+  #mainobdelnik {
+    background-color: yellow;
+    background-image: url(./cropped-walter-white-might-be-headed-to-multiversus-8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 800px) {
+  #cool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #mainobdelnik {
+    width: 300px;
+    border-radius: 150px;
+  }
+  .nahoreobdelnik {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+  }
+}
+@media (min-width: 1080px) {
+  .nahoreobdelnik {
+    background-image: url(./real.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 1250px) {
+  .nahoreobdelnik {
+    display: none;
+  }
+  #mainobdelnik {
+    height: 100%;
+    width: 100%;
+    background-image: url(./fr.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0;
+  }
+}
