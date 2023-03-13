@@ -52,7 +52,7 @@
         .navigace {
           padding: 10px;
           flex: 1;
-          display: flex;
+          display: flex !important;
           flex-direction: row;
           justify-content: right;
         }
@@ -74,6 +74,11 @@
   <script>
     function prepni() {
       let navigace = document.querySelector(".navigace");
+      if (navigace.style.display == "block") {
+        navigace.style.display = "none";
+      } else {
+        navigace.style.display = "block";
+      }
     }
   </script>
 </html>
