@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=k, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #main {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+      .piko {
+        height: 175px;
+        width: 100%;
+        border: 2px black solid;
+        background-color: blue;
+        font-size: 90%;
+        padding: 10px;
+      }
+      .piko h4 {
+        padding: -10px;
+      }
+      @media (min-width: 601px) and (max-width: 900px) {
+        #main {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .piko {
+          background-color: red;
+          width: 50%;
+        }
+      }
+      @media (min-width: 900px) {
+        #main {
+          flex-direction: row;
+        }
+        .piko {
+          background-color: gray;
+          font-size: 85%;
+        }
+      }
+      @media (max-width: 300px) {
+        #main {
+          display: none;
+        }
+        .piko {
+          display: none;
+        }
+        body,
+        html {
+          height: 100%;
+          margin: 0;
+        }
+        body {
+          background-image: url(./stažený\ soubor.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="piko">
+        <h4>Sloupec1</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat
+        odio obcaecati tempora porro maiores perferendis magnam dolorum ratione
+        ad laborum nobis illo maxime dolore vero sapiente,
+      </div>
+      <div class="piko">
+        <h4>Sloupec1</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat
+        odio obcaecati tempora porro maiores perferendis magnam dolorum ratione
+      </div>
+      <div class="piko">
+        <h4>Sloupec1</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat
+        odio obcaecati tempora porro maiores perferendis magnam dolorum ratione
+        ad laborum nobis illo maxime dolore vero
+      </div>
+      <div class="piko">
+        <h4>Sloupec1</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat
+        odio obcaecati tempora porro maiores perferendis magnam dolorum ratione
+        ad laborum nobis illo maxime dolore vero sapiente,
+      </div>
+    </div>
+  </body>
+</html>
