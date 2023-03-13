@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brikule</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #main {
+        background-color: #f4f4f4;
+        border: 1px solid #a2a2a2;
+        border-radius: 5px;
+        box-shadow: 0px 0px 12px #333;
+        padding: 5px;
+      }
+      .nazev {
+        font-size: 140%;
+        font-weight: bold;
+      }
+      #main a,
+      .tlacitko {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        display: block;
+        text-transform: uppercase;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .navigace {
+        display: none;
+      }
+      @media (min-width: 600px) {
+        #main {
+          display: flex;
+          flex-direction: row;
+          text-align: left;
+        }
+        .nazev {
+          flex: 1;
+          padding: 10px;
+          display: flex;
+          justify-content: left;
+        }
+        .tlacitko {
+          flex: 1;
+          display: none;
+        }
+        .navigace {
+          padding: 10px;
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          justify-content: right;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="nazev"><a href="">Název webu</a></div>
+      <div class="tlacitko" onclick="prepni()">&#x2630;</div>
+      <div class="navigace">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Portfolio</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function prepni() {}
+  </script>
+</html>
