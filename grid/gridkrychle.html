@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #OBDELNIK {
+        display: flex;
+        max-width: 1360px;
+        min-width: 250px;
+        height: 760px;
+        flex-direction: column;
+        background-color: red;
+        margin: auto;
+      }
+      .vrch {
+        display: flex;
+        height: 15%;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+      }
+      .cerv {
+        background-color: red;
+        width: 25%;
+        height: 100%;
+      }
+      .nad {
+        background-color: blue;
+        width: 50%;
+        height: 100%;
+      }
+      .zel {
+        background-color: green;
+        width: 25%;
+        height: 100%;
+      }
+      .cara {
+        display: flex;
+        width: 100%;
+        height: 7%;
+      }
+      .zel2 {
+        background-color: green;
+        width: 35%;
+        height: 100%;
+      }
+      .fial {
+        background-color: #800080;
+        width: 65%;
+        height: 100%;
+      }
+      .stred {
+        display: flex;
+        flex-direction: row;
+        height: 56%;
+      }
+      .obrzel {
+        width: 35%;
+        height: 100%;
+        background-color: green;
+      }
+      .ctyri {
+        width: 65%;
+        height: 100%;
+        background-color: #ccc;
+        display: flex;
+      }
+      .obd {
+        width: 25%;
+        height: 100%;
+      }
+      .obd:nth-child(1) {
+        background-color: rgb(255, 165, 0);
+      }
+      .obd:nth-child(2) {
+        background-color: rgb(0, 0, 255);
+      }
+      .obd:nth-child(3) {
+        background-color: rgb(165, 42, 42);
+      }
+      .obd:nth-child(4) {
+        background-color: rgb(255, 255, 0);
+      }
+      .cara2 {
+        display: flex;
+        width: 100%;
+        height: 7%;
+      }
+      .cern {
+        background-color: black;
+        width: 65%;
+        height: 100%;
+      }
+      .spodek {
+        display: flex;
+        height: 15%;
+        width: 100%;
+      }
+      .konec {
+        background-color: #a52a2a;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="OBDELNIK">
+      <div class="vrch">
+        <div class="cerv"></div>
+        <div class="nad"></div>
+        <div class="zel"></div>
+      </div>
+      <div class="cara">
+        <div class="zel2"></div>
+        <div class="fial"></div>
+      </div>
+      <div class="stred">
+        <div class="obrzel"></div>
+        <div class="ctyri">
+          <div class="obd"></div>
+          <div class="obd"></div>
+          <div class="obd"></div>
+          <div class="obd"></div>
+        </div>
+      </div>
+      <div class="cara2">
+        <div class="zel2"></div>
+        <div class="cern"></div>
+      </div>
+      <div class="spodek">
+        <div class="konec"></div>
+      </div>
+    </div>
+  </body>
+</html>

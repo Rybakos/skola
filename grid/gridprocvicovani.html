@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .kontejner {
+        display: grid;
+        max-width: 800px;
+        background-color: #aaa;
+        border: 10px #aaa solid;
+        gap: 10px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        margin: auto;
+      }
+      .item {
+        background-color: rgb(15, 14, 14);
+        padding: 20px;
+        color: white;
+        display: flex;
+      }
+      .item:nth-child(6) {
+        background-color: orange;
+      }
+      .item:nth-child(8) {
+        background-color: lightgreen;
+      }
+      .item:nth-child(10) {
+        background-color: lightblue;
+      }
+      .item:nth-child(4) {
+        grid-row: 2/5;
+      }
+      @media (max-width: 900px) {
+        .kontejner {
+          grid-template-columns: auto auto;
+        }
+        @media (max-width: 400px) {
+          .kontejner {
+            grid-template-columns: auto;
+          }
+          .item:nth-child(4) {
+            grid-row: 7/7;
+          }
+          .item:nth-child(6) {
+            order: 1;
+          }
+          .item:nth-child(8) {
+            order: 2;
+          }
+          .item:nth-child(10) {
+            order: 3;
+          }
+          .item {
+            order: 5;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kontejner">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+  </body>
+</html>
