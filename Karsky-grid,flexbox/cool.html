@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .kontejner {
+        width: 1000px;
+        background-color: #aaa;
+        display: grid;
+        gap: 10px;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        border: 1px black solid;
+        margin: auto;
+      }
+      .item {
+        background-color: white;
+        min-height: 175px;
+        min-width: 150px;
+        display: flex;
+        flex-direction: column;
+      }
+      .spoda {
+        display: flex;
+        height: 25%;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .prava {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+      }
+      .prava p {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .prava .h3 {
+        font-size: 22px;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .vrch {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+      }
+      .mid {
+        width: 100%;
+        height: 45%;
+      }
+      .left {
+        background-color: red;
+        width: 100px;
+        height: 20px;
+        margin-top: 5px;
+        padding-bottom: 5px;
+      }
+      .spod {
+        display: block;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        padding: 20px;
+      }
+      .spod1 {
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+      }
+      .vrch1 {
+        width: 100%;
+        height: 75%;
+        background-image: url(./malyhorni.jpg);
+        background-size: cover;
+      }
+      .vrch2 {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        background-image: url(./malydolni.jpg);
+        background-size: cover;
+      }
+      .item:nth-child(1) {
+        grid-row: 1/3;
+        grid-column: 1/3;
+        background-image: url(./velky.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      @media (max-width: 1000px) {
+        .kontejner {
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto;
+        }
+        .item:nth-child(1) {
+          height: 400px;
+        }
+        .mid {
+          height: 25%;
+        }
+        .spoda {
+          height: 40%;
+          width: 75%;
+        }
+        .prava p {
+          font-size: 18px;
+          display: block;
+          text-align: left;
+          margin-bottom: 25px;
+          margin-right: 20%;
+          padding-left: 40px;
+        }
+        .prava .h3 {
+          font-size: 28px;
+          text-align: left;
+          display: block;
+          margin-right: 50%;
+          padding-left: 40px;
+          margin-bottom: 0px;
+        }
+      }
+      @media (max-width: 500px) {
+        .kontejner {
+          grid-template-columns: auto;
+          grid-template-rows: auto auto auto auto auto auto;
+        }
+        .item:nth-child(1) {
+          grid-row: 1;
+          grid-column: 1;
+        }
+        .item {
+          height: 300px;
+        }
+        .left {
+          display: none;
+        }
+        .vrch {
+          display: none;
+        }
+        .spod {
+          display: block;
+          font-size: 48px;
+        }
+        .spod1 {
+          font-size: 28px;
+        }
+        .spoda {
+          display: flex;
+          height: 60%;
+          width: 100%;
+          margin-bottom: 0px;
+        }
+        .prava p {
+          font-size: 28px;
+          display: block;
+          text-align: left;
+          padding-bottom: 5px;
+        }
+        .prava .h3 {
+          font-size: 38px;
+          text-align: left;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kontejner">
+      <div class="item">
+        <div class="vrch">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="mid"></div>
+        <div class="spoda">
+          <div class="prava">
+            <p class="h3">Studovat s hendikepem?</p>
+            <p>Na univerzitě v Pardubice Vás podpoříme</p>
+          </div>
+          <div class="leva"></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="vrch1">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="spod1">
+          Dopravní fakulta Jana Pernera školí letecké techniky
+        </div>
+      </div>
+      <div class="item">
+        <div class="vrch2">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="spod1">
+          Galerie univerzity představí jednoho z nejznámějších ilustrátorů
+        </div>
+      </div>
+      <div class="item">
+        <div class="vrch">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="spod">UPCE bojuje o talentované ukrajinské studenty</div>
+      </div>
+      <div class="item">
+        <div class="vrch">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="spod">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+      <div class="item">
+        <div class="vrch">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="spod">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
