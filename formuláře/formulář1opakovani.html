@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form {
+        height: auto;
+        width: 600px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr;
+        margin: auto;
+        border: 1px black solid;
+      }
+      .item1 {
+        background-color: lightgrey;
+        font-size: 24px;
+      }
+      .item {
+        background-color: grey;
+        font-size: 24px;
+      }
+      #username {
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .usr {
+        padding: 25px;
+        padding-right: 175px;
+      }
+      .us {
+        padding: 25px;
+        padding-right: 299px;
+      }
+      #password {
+        border-radius: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="form">
+      <div class="item1">
+        <label for="username" class="usr">Uživatelské jméno:</label>
+        <input type="text" name="" id="username" />
+      </div>
+      <div class="item">
+        <label for="password" class="us">Heslo:</label>
+        <input type="password" name="" id="password" />
+      </div>
+      <div class="item1">
+        <input type="checkbox" name="" id="check" />
+        <label for="check">Souhlasím s podmínkami</label>
+      </div>
+      <div class="item"></div>
+      <div class="item1"></div>
+      <div class="item"></div>
+      <div class="item1"></div>
+    </form>
+  </body>
+</html>
