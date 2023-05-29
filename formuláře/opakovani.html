@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='cs'>
+
+<head>
+  <title></title>
+  <meta charset='utf-8'>
+</head>
+
+<body>
+  <form action="" method="post">
+    <table>
+      <tr>
+        <td><label for="jmeno">Jméno a příjmení:</label></td>
+        <td><input minlength="8" required title="Toto pole musí být vyplněno" size="15" maxlength="40" id="jmeno"
+            type="text" name="jmeno" autofocus></td>
+      </tr>
+      <tr>
+        <td>Heslo:</td>
+        <td><input minlength="8" type="password" name="heslo" placeholder="min. 8 znaků"></td>
+      </tr>
+      <tr>
+        <td>Pohlaví:</td>
+        <td>
+          <input type="radio" id="muz" name="pohlaví" value="muz" checked="checked"><label for="muz"> Muž</label><br>
+          <input type="radio" id="zena" name="pohlaví" value="zena"><label for="zena"> Žena</label><br>
+          <input type="radio" id="ostatni" name="pohlaví" value="ostatni"><label for="ostatni"> Ostatní</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="souhlas">Souhlasím s podmínkami</label></td>
+        <td>
+          <input type="checkbox" id="souhlas" name="souhlas" required checked>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="vek">Věk:</label></td>
+        <td>
+          <input type="number" id="vek" name="vek" min="0" max="120">
+        </td>
+      </tr>
+      <tr>
+        <td><label for="text">Vzkaz:</label></td>
+        <td>
+          <textarea cols="30" rows="10" name="text" id="text"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="zvire">Zadejte zvíře:</label></td>
+        <td>
+          <datalist id="seznam">
+            <option value="pes">
+            <option value="kočka">
+            <option value="kůň">
+            <option value="lev">
+            <option value="levhart">
+          </datalist>
+          <input list="seznam" type="text" id="zvire" name="zvire">
+        </td>
+      </tr>
+      <tr>
+        <td><label for="vyber">Vyber oblíbený nápoj:</label></td>
+        <td>
+          <select multiple size="7" name="vyber[]">
+            <optgroup label="Alkoholické nápoje">
+              <option value="pivo">Pivo</option>
+              <option value="rum">Rum</option>
+              <option value="zelena">Zelená</option>
+            </optgroup>
+            <optgroup label="Nealkoholické nápoje">
+              <option value="limo">Limo</option>
+              <option value="ostatni">Ostatní</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" name="odeslat" value="Odevzdej">
+        </td>
+      </tr>
+
+    </table>
+
+    <fieldset>
+      <legend>Popisek</legend>
+      <label for="jmeno">Jméno a příjmení:</label><input minlength="8" required title="Toto pole musí být vyplněno"
+        size="15" maxlength="40" id="jmeno" type="text" name="jmeno" autofocus><br>
+      Heslo:<input minlength="8" type="password" name="heslo" placeholder="min. 8 znaků">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
