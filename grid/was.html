@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .kontejner {
+        display: grid;
+        height: auto;
+        max-width: 800px;
+        min-height: 500px;
+        border: black 1px solid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto;
+        margin: auto;
+      }
+      .item0 {
+        background-color: yellow;
+        width: 100%;
+        border: 1px black solid;
+      }
+      .item1 {
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(5, minmax(100px, auto));
+        grid-template-columns: auto;
+      }
+      .rad0 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+      }
+      .cool:nth-child(1) {
+        background-color: darkgray;
+        border: 1px black solid;
+      }
+      .cool:nth-child(2) {
+        background-color: crimson;
+        border: 1px black solid;
+      }
+      .rad1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+      }
+      .supr:nth-child(1) {
+        background-color: darkorange;
+        border: 1px black solid;
+      }
+      .supr:nth-child(2) {
+        background-color: greenyellow;
+        border: 1px black solid;
+      }
+      .rad2 {
+        grid-row: 3/5;
+        background-color: aqua;
+        border: 1px black solid;
+      }
+      .rad3 {
+        background-color: darkred;
+        border: 1px black solid;
+      }
+      #vzkaz {
+        height: 99%;
+        width: 99%;
+      }
+      @media (max-width: 600px) {
+        .kontejner {
+          grid-template-columns: auto;
+        }
+        .rad0 {
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+        }
+        .rad1 {
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+        }
+        .item1 {
+          order: -1;
+        }
+        .rad2 {
+          background-image: url(./obrazky/hood-irony-hood.gif);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="kontejner">
+        <div class="item0">0</div>
+        <div class="item1">
+          <div class="rad0">
+            <div class="cool">1</div>
+            <div class="cool">2</div>
+          </div>
+          <div class="rad1">
+            <div class="supr">3</div>
+            <div class="supr">4</div>
+          </div>
+          <div class="rad2">
+            <textarea name="vzkaz" id="vzkaz"></textarea>
+          </div>
+          <div class="rad3">6</div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

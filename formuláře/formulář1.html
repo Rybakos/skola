@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #joj {
+        width: 250px;
+        height: 250px;
+      }
+      body {
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form action="/action_page.php" method="get" autocomplete="on"> -->
+    <form action="/action_page.php" autocomplete="on">
+      <label for="fname">First name: *</label><br />
+      <input type="text" id="fname" placeholder="John" name="name" required />
+      <br />
+      <label for="lname">Last name: *</label><br />
+      <input type="text" id="lname" name="surname" placeholder="Doe" required />
+      <br /><label for="email">Email: *</label><br />
+      <input type="email" name="" id="email" required /> <br />
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label> <br />
+      <br /><input type="submit" value="Submit" />
+      <input type="checkbox" name="" id="jo" required />
+      <label for="jo">Mám rád femboye</label> <br />
+    </form>
+    <br />
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+      <optgroup label="Personal cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+      <optgroup label="Freight cars">
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+      <optgroup label="Others">
+        <option value="man">Man</option>
+        <option value="tatra">Tatra</option>
+        <option value="kamaz">Kamaz</option>
+      </optgroup>
+    </select>
+    <br />
+    <button
+      type="button"
+      onclick="alert('Ve jménu velké temnoty tě proklínám(Jane Marku z České Třebové,učitel)')"
+      id="button"
+    >
+      <h2>Johny Pork</h2>
+      <img
+        src="./obrazky/5eddd950e5cf1ec1fa5c2d83_virtual-influencer-john-pork.jpg"
+        alt=""
+        id="joj"
+      />
+    </button>
+    <br />
+    <button
+      type="button"
+      onclick="document.querySelector('body').style.backgroundColor='black'"
+    >
+      <img src="./obrazky/unnamed.png" alt="" id="joj" />
+    </button>
+    <button
+      type="button"
+      onclick="document.querySelector('body').style.backgroundColor='white'"
+    >
+      <img src="./obrazky/Sun.png" alt="" id="joj" />
+    </button>
+    <br /><br />
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </fieldset>
+    <br /><br />
+    <hr />
+    <input list="browsers" />
+    <datalist id="browsers">
+      <option value="Internet Explorer"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari"></option>
+    </datalist>
+    <input type="submit" />
+    <br /><br /><br /><br /><br />
+  </body>
+</html>
