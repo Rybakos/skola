@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        padding-right: 100px;
+      }
+      .main {
+        border: 1px black solid;
+        padding: 20px;
+      }
+      .heslo {
+        padding-right: 174px;
+      }
+      .vek {
+        padding-right: 185px;
+      }
+      .pohlavi {
+        padding-right: 155px;
+      }
+      .odeslat {
+        margin-right: 150px;
+      }
+      .oss {
+        padding-right: 46px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <label for="jmeno">Jméno a příjmení:</label>
+      <input type="text" name="jmeno" id="jmeno" />
+      <br />
+      <label for="heslo" class="heslo">Heslo:</label>
+      <input
+        type="password"
+        name="heslo"
+        id="heslo"
+        placeholder="min. 8 znaků"
+      />
+      <br />
+      <label for="pohlavi" class="pohlavi">Pohlavi:</label>
+      <input type="radio" name="pohlavi" id="pohlavi" />Muž<br />
+      <input type="radio" name="pohlavi" id="zena" />Žena<br />
+      <input type="radio" name="pohlavi" id="ostatni" />Ostatni
+      <br />
+      <label for="souhlas">Souhlasím s podmínkami</label>
+      <input type="checkbox" name="souhlas" id="souhlas" checked />
+      <br />
+      <label for="vek" class="vek">Věk:</label>
+      <input type="number" name="vek" id="vek" />
+      <br />
+      <br />
+      <label for="kraj" class="oss">Ve kterém kraji ČR žijete?</label>
+      <select name="kraj" id="kraj" size="1">
+        <option value="Praha">Praha</option>
+        <option value="chanov">Stredni Čechy</option>
+        <option value="ustecky">Ustecky</option>
+        <option value="pce">Pardubicky👑</option>
+      </select>
+
+      <br />
+      <br />
+      <label for="auto">Oblíbený model vozu značky Škoda:</label>
+      <datalist id="auto">
+        <option value="oss"></option>
+        <option value="vrm"></option>
+        <option value="juu"></option>
+        <option value="strla"></option>
+        <option value="hahat"></option>
+      </datalist>
+
+      <input list="seznam" type="text" id="zvire" name="zvire" />
+      <br />
+      <input type="button" value="Odeslat" class="odeslat" />
+      <input type="button" value="Vymazat" />
+    </div>
+  </body>
+</html>
